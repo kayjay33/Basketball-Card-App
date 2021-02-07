@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/basketball-cards/static/css/main.725539b2.chunk.css",
-    "main.js": "/basketball-cards/static/js/main.d5948d66.chunk.js",
-    "main.js.map": "/basketball-cards/static/js/main.d5948d66.chunk.js.map",
-    "runtime-main.js": "/basketball-cards/static/js/runtime-main.96e5711e.js",
-    "runtime-main.js.map": "/basketball-cards/static/js/runtime-main.96e5711e.js.map",
-    "static/js/2.ffaebe56.chunk.js": "/basketball-cards/static/js/2.ffaebe56.chunk.js",
-    "static/js/2.ffaebe56.chunk.js.map": "/basketball-cards/static/js/2.ffaebe56.chunk.js.map",
-    "index.html": "/basketball-cards/index.html",
-    "precache-manifest.12eda9d2171b53de0570205993d841b3.js": "/basketball-cards/precache-manifest.12eda9d2171b53de0570205993d841b3.js",
-    "service-worker.js": "/basketball-cards/service-worker.js",
-    "static/css/main.725539b2.chunk.css.map": "/basketball-cards/static/css/main.725539b2.chunk.css.map",
-    "static/js/2.ffaebe56.chunk.js.LICENSE.txt": "/basketball-cards/static/js/2.ffaebe56.chunk.js.LICENSE.txt",
-    "static/media/Bean Eater-1s-200px.gif": "/basketball-cards/static/media/Bean Eater-1s-200px.853e0602.gif",
-    "static/media/App.css": "/basketball-cards/static/media/bkg2.609ac4a2.jpg",
-    "static/media/nba-logo.jpg": "/basketball-cards/static/media/nba-logo.811b59f5.jpg"
+    "main.css": "/Basketball-Card-App/static/css/main.67c31d24.chunk.css",
+    "main.js": "/Basketball-Card-App/static/js/main.d5948d66.chunk.js",
+    "main.js.map": "/Basketball-Card-App/static/js/main.d5948d66.chunk.js.map",
+    "runtime-main.js": "/Basketball-Card-App/static/js/runtime-main.1574420a.js",
+    "runtime-main.js.map": "/Basketball-Card-App/static/js/runtime-main.1574420a.js.map",
+    "static/js/2.ffaebe56.chunk.js": "/Basketball-Card-App/static/js/2.ffaebe56.chunk.js",
+    "static/js/2.ffaebe56.chunk.js.map": "/Basketball-Card-App/static/js/2.ffaebe56.chunk.js.map",
+    "index.html": "/Basketball-Card-App/index.html",
+    "precache-manifest.4ef4c39a0054394170c061a129ad3fa4.js": "/Basketball-Card-App/precache-manifest.4ef4c39a0054394170c061a129ad3fa4.js",
+    "service-worker.js": "/Basketball-Card-App/service-worker.js",
+    "static/css/main.67c31d24.chunk.css.map": "/Basketball-Card-App/static/css/main.67c31d24.chunk.css.map",
+    "static/js/2.ffaebe56.chunk.js.LICENSE.txt": "/Basketball-Card-App/static/js/2.ffaebe56.chunk.js.LICENSE.txt",
+    "static/media/Bean Eater-1s-200px.gif": "/Basketball-Card-App/static/media/Bean Eater-1s-200px.853e0602.gif",
+    "static/media/App.css": "/Basketball-Card-App/static/media/bkg2.609ac4a2.jpg",
+    "static/media/nba-logo.jpg": "/Basketball-Card-App/static/media/nba-logo.811b59f5.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.96e5711e.js",
+    "static/js/runtime-main.1574420a.js",
     "static/js/2.ffaebe56.chunk.js",
-    "static/css/main.725539b2.chunk.css",
+    "static/css/main.67c31d24.chunk.css",
     "static/js/main.d5948d66.chunk.js"
   ]
 }
