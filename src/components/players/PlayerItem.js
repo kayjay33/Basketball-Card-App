@@ -2,6 +2,15 @@ import React from 'react'
 
 const PlayerItem = ({ item }) => {
 
+  // Formatting Salary
+  let salary = item.Salary
+  let formattedSalary = salary != null ? salary.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") : 'N/A'
+
+  // Formatting Height
+  let inches = item.Height
+  let feet = Math.floor(inches / 12)
+  let newInches = inches % 12
+
     return (
         <div className='card'>
             <div className='card-inner'>
@@ -11,6 +20,9 @@ const PlayerItem = ({ item }) => {
         <div className='card-back'>
           <h1>{item.YahooName}</h1>
           <ul>
+            <li>
+              <strong>Salary:</strong> {formattedSalary === 'N/A' ? 'N/A' : `$${formattedSalary}`}
+            </li>
             <li>
               <strong>College:</strong> {item.College}
             </li>
@@ -24,7 +36,7 @@ const PlayerItem = ({ item }) => {
               <strong>Years Experience:</strong> {item.Experience}
             </li>
             <li>
-              <strong>Height (Inches):</strong> {item.Height}
+              <strong>Height:</strong> {`${feet}'${newInches}`}
             </li>
             <li>
               <strong>Weight:</strong> {item.Weight}

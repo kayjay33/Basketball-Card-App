@@ -37,6 +37,6 @@ export default App;
 
 // To do
 
-// Fix Search bar
+// Add sort by player salary
 // Fix Player Pictures
-// Fix Height Conversion
+// Change background image
