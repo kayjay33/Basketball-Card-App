@@ -37,6 +37,8 @@ export default App;
 
 // To do
 
+// qx* List of things to do:
+
 // Add sort by player salary
 // Fix Player Pictures
 // Change background image
