@@ -42,3 +42,4 @@ export default App;
 // Add sort by player salary
 // Fix Player Pictures
 // Change background image
+// Make responsive for mobile devices
