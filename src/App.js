@@ -39,6 +39,8 @@ export default App;
 
 // qx* List of things to do:
 
+
+// Trial sports radar API for more robust stats & images
 // Add sort by player salary
 // Fix Player Pictures
 // Change background image
