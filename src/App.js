@@ -33,15 +33,3 @@ const App = () => {
 }
 
 export default App;
-
-
-// To do
-
-// qx* List of things to do:
-
-
-// Trial sports radar API for more robust stats & images
-// Add sort by player salary
-// Fix Player Pictures
-// Change background image
-// Make responsive for mobile devices
