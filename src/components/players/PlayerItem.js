@@ -24,7 +24,7 @@ const PlayerItem = ({ item }) => {
           <div style={{ textAlign: 'center' }}>
             <img
               className="front-card-logo"
-              src={require("../../img/Pacer-logo.png")}
+              src={require("../../img/teamLogos/hawks-logo-white.png")}
               alt="no image"
             />
           </div>

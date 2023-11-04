@@ -3,6 +3,8 @@ import PlayerItem from './PlayerItem'
 import Spinner from '../ui/Spinner'
 
 const PlayerGrid = ({ items, isLoading }) => {
+    console.log(items);
+
     return isLoading ? (
         <Spinner />
     ) : (

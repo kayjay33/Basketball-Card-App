@@ -6,7 +6,7 @@
 
 html,
 body {
-  background: #000 url('img/pacer-bkg.jpg') no-repeat center center/cover;
+  background: #000 url('./img/solidWhiteBkg.jpg') no-repeat center center/cover;
   height: 155vh;
   color: #fff;
   font-family: Arial, Helvetica, sans-serif;
@@ -103,9 +103,10 @@ input[type='text'] {
   height: 100%;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  border: 3px outset skyblue;
+  border: 3px outset #FDBB30;
   border-radius: 10px;
-  background-color: blue;
+  /* background-color: #002D62; */
+  background-color: #C8102E;
 }
 
 .card-back {
@@ -114,7 +115,7 @@ input[type='text'] {
   height: 100%;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  border: 3px outset skyblue;
+  border: 3px outset #FDBB30;
   border-radius: 10px;
 }
 

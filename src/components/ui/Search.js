@@ -78,6 +78,7 @@ const Search = ({ getQuery }) => {
         // }
 
         const onChange = (q) => {
+            console.log(q)
             setText(q)
             for (const something in teams) {
                 if (q === something) {
@@ -90,6 +91,7 @@ const Search = ({ getQuery }) => {
         <section className='search'>
             <form>
                 <input
+                    style={{ marginTop: 250 }}
                     type='text'
                     className='form-control'
                     placeholder='Enter Team Name'
