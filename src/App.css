@@ -103,10 +103,11 @@ input[type='text'] {
   height: 100%;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  border: 3px outset #FDBB30;
+  border: 3px outset #BA9653;
   border-radius: 10px;
   /* background-color: #002D62; */
-  background-color: #C8102E;
+  /* background-color: #C8102E; */
+  background-color: #007A33;
 }
 
 .card-back {
@@ -133,7 +134,7 @@ input[type='text'] {
 
 .front-card-logo {
   margin-top: 15px;
-  height: 150px;
+  height: 100px;
 }
 
 @media (max-width: 800px) {

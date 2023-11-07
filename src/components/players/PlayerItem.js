@@ -19,12 +19,15 @@ const PlayerItem = ({ item }) => {
       <div className="card-inner">
         <div className="card-front">
           <div style={{ textAlign: 'center' }}>
+            <h1 style={{ marginTop: '5px' }}>{item.YahooName}</h1>
+          </div>
+          <div style={{ textAlign: 'center' }}>
             <img src={item.PhotoUrl} alt="" />
           </div>
           <div style={{ textAlign: 'center' }}>
             <img
               className="front-card-logo"
-              src={require("../../img/teamLogos/hawks-logo-white.png")}
+              src={require("../../img/teamLogos/boston-celtics-logo.png")}
               alt="no image"
             />
           </div>
