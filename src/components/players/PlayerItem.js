@@ -1,7 +1,9 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
 import React from "react";
 
-const PlayerItem = ({ item }) => {
+const PlayerItem = ({ item, logo, bkgColor }) => {
+  console.log(logo)
+
   // Formatting Salary
   let salary = item.Salary;
   let formattedSalary =
@@ -17,7 +19,7 @@ const PlayerItem = ({ item }) => {
   return (
     <div className="card">
       <div className="card-inner">
-        <div className="card-front">
+        <div className="card-front" style={{backgroundColor: bkgColor}}>
           <div style={{ textAlign: 'center' }}>
             <h1 style={{ marginTop: '5px' }}>{item.YahooName}</h1>
           </div>
@@ -25,9 +27,14 @@ const PlayerItem = ({ item }) => {
             <img src={item.PhotoUrl} alt="" />
           </div>
           <div style={{ textAlign: 'center' }}>
-            <img
+            {/* <img
               className="front-card-logo"
               src={require("../../img/teamLogos/boston-celtics-logo.png")}
+              alt="no image"
+            /> */}
+            <img
+              className="front-card-logo"
+              src={logo}
               alt="no image"
             />
           </div>

@@ -9,6 +9,8 @@ const App = () => {
   const [items, setItems] = useState([])
   const [isLoading, setIsLoading] = useState(true)
   const [query, setQuery] = useState('')
+  const [logo, setLogo] = useState('')
+  const [bkgColor, setBkgColor] = useState('')
 
   useEffect(() => {
     const fetchItems = async () => {
@@ -26,8 +28,8 @@ const App = () => {
   return (
     <div className="container">
       <Header />
-      <Search getQuery={(q) => setQuery(q)} />
-      <PlayerGrid isLoading={isLoading} items={items} />
+      <Search getQuery={(q) => setQuery(q)} getLogo={(l) => setLogo(l)} getBkgColor={(color) => setBkgColor(color)} />
+      <PlayerGrid isLoading={isLoading} items={items} logo={logo} bkgColor={bkgColor} />
     </div>
   );
 }

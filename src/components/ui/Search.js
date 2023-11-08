@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
 import React, { useState } from 'react'
 
-const Search = ({ getQuery }) => {
+const Search = ({ getQuery, getLogo, getBkgColor }) => {
     const [text, setText] = useState('')
 
 
@@ -38,37 +38,103 @@ const Search = ({ getQuery }) => {
     'wizards': 'was'
     }
 
+    // const logos = {
+    //     'hawks': <img src={require('../../img/nba-logo.jpg')} alt='no image' />,
+    //     'nets': <img src={require('../../img/nba-logo.jpg')} alt='no image' />,
+    //     'celtics': <img src={require('../../img/nba-logo.jpg')} alt='no image' />,
+    //     'hornets': <img src={require('../../img/nba-logo.jpg')} alt='no image' />,
+    //     'bulls': <img src={require('../../img/nba-logo.jpg')} alt='no image' />,
+    //     'cavaliers': <img src={require('../../img/nba-logo.jpg')} alt='no image' />,
+    //     'mavericks': <img src={require('../../img/nba-logo.jpg')} alt='no image' />,
+    //     'nuggets': <img src={require('../../img/nba-logo.jpg')} alt='no image' />,
+    //     'pistons': <img src={require('../../img/nba-logo.jpg')} alt='no image' />,
+    //     'warriors': <img src={require('../../img/nba-logo.jpg')} alt='no image' />,
+    //     'rockets': <img src={require('../../img/nba-logo.jpg')} alt='no image' />,
+    //     'pacers': <img src={require('../../img/nba-logo.jpg')} alt='no image' />,
+    //     'clippers': <img src={require('../../img/nba-logo.jpg')} alt='no image' />,
+    //     'lakers': <img src={require('../../img/nba-logo.jpg')} alt='no image' />,
+    //     'grizzlies': <img src={require('../../img/nba-logo.jpg')} alt='no image' />,
+    //     'heat': <img src={require('../../img/nba-logo.jpg')} alt='no image' />,
+    //     'bucks': <img src={require('../../img/nba-logo.jpg')} alt='no image' />,
+    //     'timberwolves': <img src={require('../../img/nba-logo.jpg')} alt='no image' />,
+    //     'pelicans': <img src={require('../../img/nba-logo.jpg')} alt='no image' />,
+    //     'knicks': <img src={require('../../img/nba-logo.jpg')} alt='no image' />,
+    //     'thunder': <img src={require('../../img/nba-logo.jpg')} alt='no image' />,
+    //     'magic': <img src={require('../../img/nba-logo.jpg')} alt='no image' />,
+    //     'sixers': <img src={require('../../img/nba-logo.jpg')} alt='no image' />,
+    //     'suns': <img src={require('../../img/nba-logo.jpg')} alt='no image' />,
+    //     'trail blazers': <img src={require('../../img/nba-logo.jpg')} alt='no image' />,
+    //     'kings': <img src={require('../../img/nba-logo.jpg')} alt='no image' />,
+    //     'spurs': <img src={require('../../img/nba-logo.jpg')} alt='no image' />,
+    //     'raptors': <img src={require('../../img/nba-logo.jpg')} alt='no image' />,
+    //     'jazz': <img src={require('../../img/nba-logo.jpg')} alt='no image' />,
+    //     'wizards': <img src={require('../../img/nba-logo.jpg')} alt='no image' />
+    // }
+
     const logos = {
-        'hawks': <img src={require('../../img/nba-logo.jpg')} alt='no image' />,
-        'nets': <img src={require('../../img/nba-logo.jpg')} alt='no image' />,
-        'celtics': <img src={require('../../img/nba-logo.jpg')} alt='no image' />,
-        'hornets': <img src={require('../../img/nba-logo.jpg')} alt='no image' />,
-        'bulls': <img src={require('../../img/nba-logo.jpg')} alt='no image' />,
-        'cavaliers': <img src={require('../../img/nba-logo.jpg')} alt='no image' />,
-        'mavericks': <img src={require('../../img/nba-logo.jpg')} alt='no image' />,
-        'nuggets': <img src={require('../../img/nba-logo.jpg')} alt='no image' />,
-        'pistons': <img src={require('../../img/nba-logo.jpg')} alt='no image' />,
-        'warriors': <img src={require('../../img/nba-logo.jpg')} alt='no image' />,
-        'rockets': <img src={require('../../img/nba-logo.jpg')} alt='no image' />,
-        'pacers': <img src={require('../../img/nba-logo.jpg')} alt='no image' />,
-        'clippers': <img src={require('../../img/nba-logo.jpg')} alt='no image' />,
-        'lakers': <img src={require('../../img/nba-logo.jpg')} alt='no image' />,
-        'grizzlies': <img src={require('../../img/nba-logo.jpg')} alt='no image' />,
-        'heat': <img src={require('../../img/nba-logo.jpg')} alt='no image' />,
-        'bucks': <img src={require('../../img/nba-logo.jpg')} alt='no image' />,
-        'timberwolves': <img src={require('../../img/nba-logo.jpg')} alt='no image' />,
-        'pelicans': <img src={require('../../img/nba-logo.jpg')} alt='no image' />,
-        'knicks': <img src={require('../../img/nba-logo.jpg')} alt='no image' />,
-        'thunder': <img src={require('../../img/nba-logo.jpg')} alt='no image' />,
-        'magic': <img src={require('../../img/nba-logo.jpg')} alt='no image' />,
-        'sixers': <img src={require('../../img/nba-logo.jpg')} alt='no image' />,
-        'suns': <img src={require('../../img/nba-logo.jpg')} alt='no image' />,
-        'trail blazers': <img src={require('../../img/nba-logo.jpg')} alt='no image' />,
-        'kings': <img src={require('../../img/nba-logo.jpg')} alt='no image' />,
-        'spurs': <img src={require('../../img/nba-logo.jpg')} alt='no image' />,
-        'raptors': <img src={require('../../img/nba-logo.jpg')} alt='no image' />,
-        'jazz': <img src={require('../../img/nba-logo.jpg')} alt='no image' />,
-        'wizards': <img src={require('../../img/nba-logo.jpg')} alt='no image' />
+        'hawks': require('../../img/teamLogos/hawks-logo-white.png'),
+        'nets': require('../../img/teamLogos/brooklyn-nets-logo.png'),
+        'celtics': require('../../img/teamLogos/boston-celtics-logo.png'),
+        'hornets': require('../../img/teamLogos/charlotte-hornets-logo.png'),
+        'bulls': require('../../img/teamLogos/chicago-bulls-logo.png'),
+        'cavaliers': require('../../img/teamLogos/cleveland-cavs-logo.png'),
+        'mavericks': require('../../img/teamLogos/dallas-mavericks-logo.png'),
+        'nuggets': require('../../img/teamLogos/denver-nuggets-logo.png'),
+        'pistons': require('../../img/teamLogos/detroit-pistons-logo.png'),
+        'warriors': require('../../img/teamLogos/golden-state-warriors-logo.png'),
+        'rockets': require('../../img/teamLogos/houston-rockets-logo.png'),
+        'pacers': require('../../img/teamLogos/Pacer-logo.png'),
+        'clippers': require('../../img/teamLogos/la-clippers-logo.png'),
+        'lakers': require('../../img/teamLogos/la-lakers-logo.png'),
+        'grizzlies': require('../../img/teamLogos/memphis-grizzlies-logo.png'),
+        'heat': require('../../img/teamLogos/miami-heat-logo.gif'),
+        'bucks': require('../../img/teamLogos/milwaukee-bucks-logo.png'),
+        'timberwolves': require('../../img/teamLogos/minnesota-timberwolves-logo.png'),
+        'pelicans': require('../../img/teamLogos/new-orleans-pelicans-logo.png'),
+        'knicks': require('../../img/teamLogos/new-york-knicks-logo.png'),
+        'thunder': require('../../img/teamLogos/okc-thunder-logo.png'),
+        'magic': require('../../img/teamLogos/orlando-magic-logo.png'),
+        'sixers': require('../../img/teamLogos/philly-sixers-logo.png'),
+        'suns': require('../../img/teamLogos/phoenix-suns-logo.png'),
+        'trail blazers': require('../../img/teamLogos/portland-blazers-logo.png'),
+        'kings': require('../../img/teamLogos/sacramento-kings-logo.png'),
+        'spurs': require('../../img/teamLogos/san-antonio-spurs-logo.png'),
+        'raptors': require('../../img/teamLogos/toronto-raptors-logo.png'),
+        'jazz': require('../../img/teamLogos/utah-jazz-logo.png'),
+        'wizards': require('../../img/teamLogos/washington-wizards-logo.png'),
+    }
+
+    const teamBackgroundColors = {
+        'hawks': '#C8102E',
+        'nets': '#000000',
+        'celtics': '#007A33',
+        'hornets': '#1D1160',
+        'bulls': '#CE1141',
+        'cavaliers': '#860038',
+        'mavericks': '#00538C',
+        'nuggets': '#0E2240',
+        'pistons': '#C8102E',
+        'warriors': '#1D428A',
+        'rockets': '#CE1141',
+        'pacers': '#002D62',
+        'clippers': '#C8102E',
+        'lakers': '#552583',
+        'grizzlies': '#5D76A9',
+        'heat': '#98002E',
+        'bucks': '#00471B',
+        'timberwolves': '#0C2340',
+        'pelicans': '#0C2340',
+        'knicks': '#006BB6',
+        'thunder': '#007AC1',
+        'magic': '#0077C0',
+        'sixers': '#006BB6',
+        'suns': '#1D1160',
+        'trail blazers': '#E03A3E',
+        'kings': '#5A2D81',
+        'spurs': '#C4CED4',
+        'raptors': '#CE1141',
+        'jazz': '#002B5C',
+        'wizards': '#002B5C',
     }
 
         // qx* Original search check
@@ -83,6 +149,17 @@ const Search = ({ getQuery }) => {
             for (const something in teams) {
                 if (q === something) {
                     getQuery(teams[something])
+                }
+            }
+            for (const logo in logos) {
+                if (q === logo) {
+                    console.log('this is true')
+                    getLogo(logos[logo])
+                }
+            }
+            for (const color in teamBackgroundColors) {
+                if (q === color) {
+                    getBkgColor(teamBackgroundColors[color])
                 }
             }
         }
