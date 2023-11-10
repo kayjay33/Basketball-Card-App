@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
 import React from "react";
 
-const PlayerItem = ({ item, logo, bkgColor }) => {
+const PlayerItem = ({ item, logo, bkgColor, borderColor }) => {
   console.log(logo)
 
   // Formatting Salary
@@ -19,7 +19,7 @@ const PlayerItem = ({ item, logo, bkgColor }) => {
   return (
     <div className="card">
       <div className="card-inner">
-        <div className="card-front" style={{backgroundColor: bkgColor}}>
+        <div className="card-front" style={{backgroundColor: bkgColor, border: `3px outset ${borderColor}`}}>
           <div style={{ textAlign: 'center' }}>
             <h1 style={{ marginTop: '5px' }}>{item.YahooName}</h1>
           </div>

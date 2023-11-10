@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
 import React, { useState } from 'react'
 
-const Search = ({ getQuery, getLogo, getBkgColor }) => {
+const Search = ({ getQuery, getLogo, getBkgColor, getBorderColor }) => {
     const [text, setText] = useState('')
 
 
@@ -137,6 +137,39 @@ const Search = ({ getQuery, getLogo, getBkgColor }) => {
         'wizards': '#002B5C',
     }
 
+    const teamBorderColors = {
+        'hawks': '#FDB927',
+        'nets': '#FFFFFF',
+        'celtics': '#BA9653',
+        'hornets': '#00788C',
+        'bulls': '#000000',
+        'cavaliers': '#041E42',
+        'mavericks': '#002B5E',
+        'nuggets': '#FEC524',
+        'pistons': '#1D42BA',
+        'warriors': '#FFC72C',
+        'rockets': '#000000',
+        'pacers': '#FDBB30',
+        'clippers': '#1D428A',
+        'lakers': '#FDB927',
+        'grizzlies': '#12173F',
+        'heat': '#F9A01B',
+        'bucks': '#EEE1C6',
+        'timberwolves': '#236192',
+        'pelicans': '#C8102E',
+        'knicks': '#F58426',
+        'thunder': '#EF3B24',
+        'magic': '#C4CED4',
+        'sixers': '#ED174C',
+        'suns': '#E56020',
+        'trail blazers': '#000000',
+        'kings': '#63727A',
+        'spurs': '#000000',
+        'raptors': '#000000',
+        'jazz': '#00471B',
+        'wizards': '#E31837',
+    }
+
         // qx* Original search check
         // const onChange = (q) => {
         //     setText(q)
@@ -160,6 +193,11 @@ const Search = ({ getQuery, getLogo, getBkgColor }) => {
             for (const color in teamBackgroundColors) {
                 if (q === color) {
                     getBkgColor(teamBackgroundColors[color])
+                }
+            }
+            for (const borderColor in teamBorderColors) {
+                if (q === borderColor) {
+                    getBorderColor(teamBorderColors[borderColor])
                 }
             }
         }
