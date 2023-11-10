@@ -103,11 +103,7 @@ input[type='text'] {
   height: 100%;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  /* border: 3px outset #BA9653; */
   border-radius: 10px;
-  /* background-color: #002D62; */
-  /* background-color: #C8102E; */
-  background-color: #000;
 }
 
 .card-back {

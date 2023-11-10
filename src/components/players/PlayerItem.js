@@ -2,7 +2,6 @@
 import React from "react";
 
 const PlayerItem = ({ item, logo, bkgColor, borderColor }) => {
-  console.log(logo)
 
   // Formatting Salary
   let salary = item.Salary;
@@ -27,11 +26,6 @@ const PlayerItem = ({ item, logo, bkgColor, borderColor }) => {
             <img src={item.PhotoUrl} alt="" />
           </div>
           <div style={{ textAlign: 'center' }}>
-            {/* <img
-              className="front-card-logo"
-              src={require("../../img/teamLogos/boston-celtics-logo.png")}
-              alt="no image"
-            /> */}
             <img
               className="front-card-logo"
               src={logo}

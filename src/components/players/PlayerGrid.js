@@ -3,11 +3,6 @@ import PlayerItem from './PlayerItem'
 import Spinner from '../ui/Spinner'
 
 const PlayerGrid = ({ items, isLoading, logo, bkgColor, borderColor }) => {
-    console.log(items);
-    console.log(logo)
-    console.log(bkgColor)
-    console.log(borderColor)
-
 
     return isLoading ? (
         <Spinner />
