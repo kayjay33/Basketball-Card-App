@@ -6,5 +6,6 @@
     - Warriors
 - Modify back of card styling
 - Fix spinner to something bball related
+- Change tab icon
 
 
