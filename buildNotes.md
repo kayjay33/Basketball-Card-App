@@ -5,7 +5,8 @@
     - Spurs
     - Warriors
 - Modify back of card styling
-- Fix spinner to something bball related
+- Fix spinner to something basketball related
 - Change tab icon
+    - Should be somewhere in the index.html
 
 
